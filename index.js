@@ -4,7 +4,9 @@ let submit=document.getElementById("submit");
 myForm.onsubmit=function(){
     if(myForm.fname.value==""||myForm.lname.value==""||myForm.email.value==""){
         message.innerHTML="Please all fields";
+        return false;
     }else{
         message.innerHTML="Account created"; 
+        return true;
     }
 }
